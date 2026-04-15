@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.local
+.env.*.local
+dist/
+build/
+.next/
+.venv/
+venv/
+*.log
+.DS_Store
+Thumbs.db
