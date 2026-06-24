@@ -2,8 +2,10 @@
 
 Folosește poza de referință a lui Sil pentru identitate. Cere 1280x720, 16:9.
 Cele 3 constante de brand (păstrează-le mereu): identitatea lui Sil, lumină
-violet pe o parte, fundal grid întunecat + spațiu pentru text. Tool recomandat:
-Midjourney (--cref) sau Ideogram (cel mai bun la text). Evită DALL-E pentru text.
+violet pe o parte, fundal grid întunecat + spațiu pentru text.
+
+**Workflow confirmat:** Thumbmagic (generare) → ChatGPT (scoatere watermark).
+Evită DALL-E pentru text — randează prost diacriticele.
 
 Schimbă pentru fiecare video doar: POSE/expresia și TEXTUL.
 
