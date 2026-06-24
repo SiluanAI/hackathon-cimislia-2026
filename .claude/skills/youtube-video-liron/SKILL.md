@@ -55,6 +55,12 @@ Acestea NU sunt opțiuni de stil — sunt regulile după care YouTube promoveaz�
 - **Distribuția primelor 24-48h:** trimite trafic CALIFICAT (patroni HVAC, clienți, grupuri de antreprenori). Trafic care nu rămâne strică videoul.
 - **Consistența > perfecțiunea.** 1 video/săptămână bate sporadic-dar-perfect. Avantajul de prim-venit în RO/MD se pierde fără ritm.
 
+## Strategie de format și nișă (din CGE Niche Validator)
+
+- **Format canonic: EXPLAINER.** ~80% din videouri trebuie să fie Explainer (poveste + profunzime), nu Listicle. Explainer-ul vinde high-ticket și B2B — exact ce face Liron (Site 800€, consulting 1200-2500€). Listicle = B2C low-ticket, NU formatul nostru. Ține experiența privitorului consecventă: nu sări de la un format la altul.
+- **King of the puddle.** Îngustează X (cine) și Y (ce) până e aproape inconfortabil de specific. Lărgești DUPĂ ce câștigi, nu înainte. Nu dilua în conținut GEN devreme — domină puddle-ul HVAC întâi.
+- **Ești nișa — experiment low-cost.** Dacă HVAC nu prinde după ~10-30 videouri, pivotăm sub același brand personal (Siluan Lipădatu rămâne). Asta scoate presiunea de pe "primul video perfect": livrăm volum, algoritmul arată câștigătorul.
+
 ## Reguli de bază (nu le încălca)
 
 - **Diacritice românești obligatorii** peste tot: ă, î, â, ș, ț. Fără emoji în scenariu.
