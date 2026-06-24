@@ -3,7 +3,8 @@
 ## Plan curent de publicare
 - Săptămâna 1 (1): #1
 - Săptămâna 2 (3): #15, #21, #11
-- Săptămâna 3 (3): #4, #18, #31
+- Săptămâna 3 (3): #4, #18, #8
+- Amânat (după 8-10 videouri HVAC): #31 (agenție AI la 18 ani — personal brand, nu HVAC)
 
 ## Durere & conștientizare
 1. [HVAC] Câți clienți pierde o firmă de instalații într-o lună fără sistem
@@ -18,7 +19,7 @@
 10. [HVAC] Sezonul de vară vine — ești pregătit pentru clienții de AC?
 
 ## Educativ / cum funcționează
-11. [GEN] Ce e un chatbot și de ce patronul de HVAC ar trebui să aibă unul
+11. [HVAC] Ce e un chatbot și de ce patronul de HVAC ar trebui să aibă unul
 12. [HVAC] Cum arată un site bun pentru o firmă de instalații (exemplu)
 13. [GEN] Site vs. pagină de Facebook — care aduce mai mulți clienți
 14. [GEN] Ce e automatizarea și ce NU este
