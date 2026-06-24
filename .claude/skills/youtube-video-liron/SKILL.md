@@ -20,7 +20,21 @@ din Moldova (apoi România).
 
 Citește `references/brand.md` la fiecare rulare — conține poziționarea, oferta și
 prețurile reale. Tot conținutul trebuie să fie ancorat în acele date, fără cifre
-inventate.
+inventate. Vezi `references/research-piata.md` pentru peisajul concurențial (nișa e
+goală în RO/MD, dovedită în EN — putem adapta unghiuri care funcționează deja acolo).
+
+## Principii bazate pe algoritm (de ce facem ce facem)
+
+Acestea NU sunt opțiuni de stil — sunt regulile după care YouTube promovează sau îngroapă un video. Respectă-le.
+
+- **CTR + Retenție decid totul.** Algoritmul promovează videourile care țin oamenii pe platformă. Tot efortul servește două numere: câți dau click (thumbnail+titlu) și cât rămân (hook+scenariu). Thumbnail + titlu merită ~50% din efort.
+- **Hook în primele 15 secunde.** Fără intro, fără "salut, abonează-te". Numește durerea + promite rezultat concret + deschide o buclă. Acolo pleacă jumătate din oameni dacă greșești.
+- **Un video = o singură durere/întrebare.** Nu îngrămădi subiecte.
+- **Bucle deschise** la fiecare 30-60s ("dar partea cea mai scumpă vine acum") pentru retenție.
+- **CTR-first la titlu/thumbnail:** număr concret + o emoție pe față + max 3-4 cuvinte text. Testează mental pe ecran de telefon.
+- **Metrica de succes e LEAD-ul, nu vederile.** Nișă B2B mică: 300 de vederi cu 2 patroni HVAC convertiți > 50.000 de vederi de la oameni care nu cumpără. Nu urmări viral, urmărește clientul potrivit.
+- **Distribuția primelor 24-48h:** trimite trafic CALIFICAT (patroni HVAC, clienți, grupuri de antreprenori). Trafic care nu rămâne strică videoul.
+- **Consistența > perfecțiunea.** 1 video/săptămână bate sporadic-dar-perfect. Avantajul de prim-venit în RO/MD se pierde fără ritm.
 
 ## Reguli de bază (nu le încălca)
 
