@@ -1,34 +1,32 @@
 # Șablon descriere YouTube + metadata
 
 ## Descriere video (gata de copiat)
-Primele 2 rânduri sunt cele mai importante (apar în căutări/feed). Pune durerea +
-promisiunea + cuvinte-cheie (HVAC, instalații, Moldova, România, AI) natural.
+
+**Reguli de format (obligatorii):**
+- Link: `liron.md` fără https:// (YouTube nu-l face clickabil oricum)
+- Capitole: FĂRĂ timecode/timestamps — doar repere ca etichete simple
+- Fără emoji în scenariu; în descriere sunt ok cu moderație
 
 ```
 [2 rânduri hook: durerea + ce arată videoul, cu cuvinte-cheie]
 
 [1 paragraf: ce se întâmplă în video, ce învață patronul]
 
-👉 [CTA spre produs] — programează aici: https://liron.md
+[Sunt Siluan, fondator Liron Agency. Construim site-uri și automatizări AI pentru
+firme de instalații din Moldova și România care pierd clienți fără să-și dea seama.]
 
-━━━━━━━━━━━━━━━━━━━━━
+Vrei să [CTA specific subiectului]?
+Hai la o sesiune de strategie: liron.md
+Contact direct: +373 78 996 237
 
-⏱️ CE GĂSEȘTI ÎN VIDEO:
-00:00 - [capitol]
-0X:XX - [capitol]
-...
+CAPITOLE:
+— [reper 1]
+— [reper 2]
+— [reper 3]
+— [reper 4]
+— [reper 5]
 
-━━━━━━━━━━━━━━━━━━━━━
-
-Liron Agency construiește website-uri și automatizări AI pentru afaceri din Moldova
-și România. Site-uri cu sistem de programări, chatboți 24/7 și automatizări.
-
-🌐 Site: https://liron.md
-📞 Contact: +373 78 996 237
-
-[apel la share către un coleg cu firmă HVAC]
-
-#HVAC #AfaceriMoldova #AutomatizareAI #FirmaInstalatii #DigitalizareMoldova
+#HVAC #instalatii #[cuvânt specific] #afaceriMoldova #LironAgency #digitalizare #automatizare
 ```
 
 ## Titlu — 3 opțiuni, recomandă una cu număr concret.
@@ -40,6 +38,7 @@ Una pe rând, timecode + întrebarea la care răspunzi în acel moment:
 3:30 [întrebare]
 ...
 ```
+*(Sil ajustează timecode-urile după montaj.)*
 
 ## Playlist (la nevoie)
 - Title: scurt, conține "HVAC".
