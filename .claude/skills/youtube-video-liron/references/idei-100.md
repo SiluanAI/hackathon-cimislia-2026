@@ -3,8 +3,9 @@
 ## Plan curent de publicare
 - Săptămâna 1 (1): #1
 - Săptămâna 2 (3): #15, #21, #11
-- Săptămâna 3 (3): #4, #18, #8
+- Săptămâna 3: #4, #18 (#8 anulat definitiv)
 - Amânat (după 8-10 videouri HVAC): #31 (agenție AI la 18 ani — personal brand, nu HVAC)
+- Filmat/programat: #1, #15 (25 iun), #21 (26 iun), #11 (28 iun), #4 (30 iun)
 
 ## Durere & conștientizare
 1. [HVAC] Câți clienți pierde o firmă de instalații într-o lună fără sistem
