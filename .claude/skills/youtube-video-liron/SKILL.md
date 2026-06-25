@@ -94,10 +94,10 @@ Hook → Calcul/Poveste → De ce se întâmplă → Soluții (legate de ofertă
 Indică durata țintă pe secțiuni. La final, leagă subtil de un produs real din ofertă.
 
 ### Pasul 4 — Thumbnail
-Generează un prompt complet după `references/thumbnail-template.md`. AI-ul generează
-TOT, inclusiv textul pe imagine. Folosește poza de referință a lui Sil pentru
-identitate. Păstrează cele 3 elemente de brand constante (lumină violet pe o parte,
-fundal grid întunecat, identitate Sil) ca thumbnail-urile să arate ca o familie.
+NU mai genera prompt de imagine. Sil lipește scriptul în ChatGPT (cu instrucțiunea din
+`references/thumbnail-template.md` deja setată), și ChatGPT face thumbnail-ul. Tu doar
+sugerează pe scurt: **mesajul-șoc recomandat (2-3 cuvinte)** + **elementul vizual** potrivit
+pentru acel video. Text minim pe thumbnail — regula de aur.
 
 ### Pasul 5 — Titlu
 Dă 3 opțiuni de titlu și recomandă una. Preferă numere concrete în titlu (CTR mai mare).
