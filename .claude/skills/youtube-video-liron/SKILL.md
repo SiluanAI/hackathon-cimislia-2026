@@ -47,6 +47,7 @@ goală în RO/MD, dovedită în EN — putem adapta unghiuri care funcționează
 Acestea NU sunt opțiuni de stil — sunt regulile după care YouTube promovează sau îngroapă un video. Respectă-le.
 
 - **CTR + Retenție decid totul.** Algoritmul promovează videourile care țin oamenii pe platformă. Tot efortul servește două numere: câți dau click (thumbnail+titlu) și cât rămân (hook+scenariu). Thumbnail + titlu merită ~50% din efort.
+- **TRIFECTA (Shane Hummus): titlu + thumbnail + intro trebuie să fie congruente.** Toate trei arată în ACEEAȘI direcție, promit ACELAȘI lucru. Dacă thumbnail-ul zice "1.000.000 lei", titlul și primele 15 secunde trebuie să livreze fix asta. Incongruența = omul dă click cu o așteptare, primește altceva, pleacă imediat → retenția moare și algoritmul îngroapă videoul. Verifică mereu cele trei împreună înainte de publicare.
 - **Hook în primele 15 secunde.** Fără intro, fără "salut, abonează-te". Numește durerea + promite rezultat concret + deschide o buclă. Acolo pleacă jumătate din oameni dacă greșești.
 - **Un video = o singură durere/întrebare.** Nu îngrămădi subiecte.
 - **Bucle deschise** la fiecare 30-60s ("dar partea cea mai scumpă vine acum") pentru retenție.
