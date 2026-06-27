@@ -1,7 +1,7 @@
 # Video C — "Cum ajunge o firmă de instalații la zeci de recenzii fără să ceară manual"
 
 Idee recenzii (NOU) · HVAC · Explainer · Produs: automatizare follow-up SMS (Chatbot 300-800€)
-Status: DE FILMAT (săptămâna de după)
+Status: PROGRAMAT (10 iul 2026)
 Validare: temă dovedită EN, videouri constante 2018→2026.
 Diferențiator vs. EN: ei sunt DIY-tutorial; noi vindem done-for-you (SMS automat).
 

@@ -13,10 +13,10 @@ Pachetele complete de video și istoricul strategiei. Skill-ul care le produce:
 | 03-site-3-zile.md | #21 | Site Ecoconfortsistem în 3 zile | Programat 26 iun |
 | 04-chatbot.md | #11 | Ce e un chatbot, prinde clienții noaptea | Programat 28 iun |
 | 05-nu-am-nevoie-de-site.md | #4 | "Nu am nevoie de site" — calcul ~1M lei/an | Programat 30 iun |
-| 06-obiectii-programare-online.md | #18 | 3 frici despre programarea online | De filmat |
-| 07-google-maps.md | #6 | Instalator mai slab apare pe Google | De filmat |
-| 08-sezon-ac.md | #47 | Sezon AC: pregătește-te acum | De filmat |
-| 09-recenzii-google.md | nou | Zeci de recenzii fără să ceri manual | De filmat |
+| 06-obiectii-programare-online.md | #18 | 3 frici despre programarea online | Programat 2 iul |
+| 07-google-maps.md | #6 | Instalator mai slab apare pe Google | Programat 6 iul |
+| 08-sezon-ac.md | #47 | Sezon AC: pregătește-te acum | Programat 8 iul |
+| 09-recenzii-google.md | nou | Zeci de recenzii fără să ceri manual | Programat 10 iul |
 
 ## Evoluția strategiei
 `evolutie.md` — cum s-a schimbat abordarea de la selecția nișei până acum.

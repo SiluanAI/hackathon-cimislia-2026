@@ -59,11 +59,13 @@ România să nu mai piardă clienți."
 - #11 (28 iun) — Ce e un chatbot și cum prinde clienții noaptea
 - #4 (30 iun) — "Nu am nevoie de site" — calcul live (~1.000.000 lei/an)
 
-**De filmat (pachete scrise, gata):**
-- #18 (reframe) — "Clienții mei nu vor folosi online" — răspuns la 3 frici
-- Video A (#6) — De ce un instalator mai slab apare înaintea ta pe Google
-- Video B (#47) — Sezonul de AC: cine se pregătește acum câștigă vara
-- Video C (recenzii) — Zeci de recenzii Google fără să ceri manual (sistem SMS automat)
+**Filmate și programate (continuare):**
+- #18 (2 iul) — "Clienții mei nu vor folosi online" — răspuns la 3 frici
+- #6 (6 iul) — De ce un instalator mai slab apare înaintea ta pe Google
+- #47 (8 iul) — Sezonul de AC: cine se pregătește acum câștigă vara
+- recenzii (10 iul) — Zeci de recenzii Google fără să ceri manual (sistem SMS automat)
+
+Toate cele 9 videouri sunt acum filmate și programate (25 iun → 10 iul).
 
 **Amânat:** #31 (agenție AI la 18 ani — personal brand) după 8-10 videouri HVAC.
 **Anulat:** #8.

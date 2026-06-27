@@ -1,7 +1,7 @@
 # Video B — "Sezonul de AC vine. Cine prinde clienții acum câștigă vara"
 
 Idee #47 · HVAC · Explainer · timely (început de vară)
-Status: DE FILMAT (săptămâna de după)
+Status: PROGRAMAT (8 iul 2026)
 Validare: vara = până la 50% din vânzările anuale (ServiceTitan, Scorpion + agenții HVAC).
 
 ## Trifecta

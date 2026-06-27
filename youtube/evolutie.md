@@ -57,5 +57,6 @@ raționamentul din spatele deciziilor, nu doar rezultatul final.
 - #18 reframuit (obiecții la programare online) ca să nu dubleze #15.
 
 ## Stadiu actual (vezi și decisions/youtube-strategy.md)
-- Programate/filmate: #1, #15, #21, #11, #4.
-- De filmat (pachete gata): #18, #6 (Google Maps), #47 (sezon AC), recenzii.
+- Toate 9 filmate și programate: #1, #15 (25 iun), #21 (26 iun), #11 (28 iun),
+  #4 (30 iun), #18 (2 iul), #6 Google Maps (6 iul), #47 sezon AC (8 iul),
+  recenzii (10 iul). O lună+ de conținut HVAC consecvent, 1 video/săptămână și mai des.

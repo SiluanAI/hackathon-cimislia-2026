@@ -1,7 +1,7 @@
 # Video — "'Clienții mei nu vor folosi programarea online' — răspund la 3 frici"
 
 Idee #18 (reframe, ca să nu dubleze #15) · HVAC · Explainer
-Status: DE FILMAT (săptămâna viitoare)
+Status: PROGRAMAT (2 iul 2026)
 
 ## SCENARIU (țintă 6-7 min)
 

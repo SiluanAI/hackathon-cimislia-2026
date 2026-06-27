@@ -1,7 +1,7 @@
 # Video A — "De ce un instalator mai slab apare înaintea ta pe Google"
 
 Idee #6 · HVAC · Explainer · Produs: GMB setup + Strategy Session
-Status: DE FILMAT (săptămâna de după)
+Status: PROGRAMAT (6 iul 2026)
 Validare: temă masiv dovedită în EN (ServiceTitan + zeci de creatori GMB HVAC).
 
 ## Trifecta
