@@ -5,7 +5,7 @@ description: >-
   produs/business) cu un consiliu adversarial înainte de a investi timp. Scopul
   e să scoată Claude din "modul acord" și să-ți dea adevărul: ipotezele care
   ucid ideea + cel mai ieftin test, nu un scor care pare obiectiv. Două moduri:
-  RAPID (Contrarian + Buyer, ~30s) și COMPLET (5 persona + Judecător). NU îl
+  RAPID (un critic-structurat, ~30s) și COMPLET (5 persona + Judecător). NU îl
   folosi pentru decizii zilnice mici (ex: "ce video filmez joi") — pentru
   acelea ai skill-ul youtube-video-liron.
 ---
@@ -33,13 +33,20 @@ cuantificare fără rubrică).
 
 ## Pasul 0 — Alege modul
 
-- **RAPID** (default pentru decizii sub ~500€ sau reversibile): doar 2 persona
-  — Contrarian + Buyer — secvențial, apoi un verdict scurt. ~30s.
+- **RAPID** (default pentru decizii sub ~500€ sau reversibile): UN singur
+  critic-structurat, fără sub-agenți. ~30s, ⅓ din cost.
 - **COMPLET** (decizii mari: pivot, ofertă nouă, preț de produs-erou, direcție
   de nișă): 5 persona în paralel + Judecător.
 
 Dacă utilizatorul nu specifică, alege singur pe baza mizei și anunță ce mod ai
 ales (poate suprascrie).
+
+**De ce un singur critic la RAPID (dovedit pe propriul skill):** într-un test
+head-to-head pe o decizie reală de preț, un singur critic bine prompt-uit a
+egalat consiliul de 5 persona la ⅓ din cost. Cei 5 sub-agenți merită costul
+doar la decizii mari, unde datele externe ale Deep Researcher și obiecțiile
+reale ale Buyer-ului chiar adaugă informație nouă. Nu plăti 5 agenți pentru ce
+livrează unul.
 
 ---
 
@@ -80,10 +87,20 @@ CONTEXT: <orice altceva relevant>
 Fiecare persona întoarce: **3-5 puncte concrete** + **o propoziție de verdict**.
 Fără scoruri numerice.
 
-### Mod RAPID — doar aceste 2, secvențial:
+### Mod RAPID — un singur critic-structurat (fără sub-agenți):
 
-**Contrarian** și **Buyer** (vezi prompturile mai jos). Apoi treci direct la
-Judecător (varianta scurtă).
+Tu (modelul principal) joci rolul, într-un singur pas, structurat. Fii brutal
+de sincer, anti-sycophant, fără să echilibrezi cu pozitive de complezență.
+Produ direct:
+1. **Ipotezele-ucigașe** — ce trebuie să fie adevărat ca decizia să meargă,
+   ordonate după (probabilitate să fie false × cât de mult doare).
+2. **Cel mai mare risc real.**
+3. **Vocea clientului** — o obiecție sinceră, ca omul care plătește, nu politicos.
+4. **Verdict:** GREEN LIGHT / RESHAPE / KILL, cu ce să păstrezi și ce să schimbi.
+5. **Cel mai ieftin test de 48h** care atacă ipoteza #1.
+
+Dacă ai nevoie de un preț real de piață pentru ipoteza #1, caută pe web (1-2
+căutări), citează sursa. Apoi treci la output-ul de Judecător (varianta scurtă).
 
 ### Mod COMPLET — toți 5 în PARALEL:
 
