@@ -5,8 +5,8 @@ description: >-
   rulate ca sub-agenți în paralel (Contrarian, Expansionist, First-Principles,
   Deep Researcher, Buyer) plus un Judecător care dă verdict GREEN LIGHT /
   RESHAPE / KILL, scor /10 per persona și cel mai ieftin test de 48h. Folosește
-  ÎNAINTE de a investi timp într-o idee de produs, o direcție pentru hackathon
-  sau orice decizie importantă. Scopul e să scoată Claude din "modul acord" și
+  ÎNAINTE de a investi timp într-o idee de produs, un video, o direcție de
+  conținut sau orice decizie importantă. Scopul e să scoată Claude din "modul acord" și
   să spună adevărul, nu ce vrei să auzi.
 ---
 
@@ -27,12 +27,12 @@ să-ți spună adevărul. Consiliul forțează contradicția structurată.
 Înainte să rulezi consiliul, pune EXACT aceste 3 întrebări și așteaptă
 răspunsurile. Nu presupune răspunsurile.
 
-1. **Cine e clientul / utilizatorul real?** (Pentru hackathon: cine folosește
-   produsul ȘI cine îl judecă — juriul, ce criterii are.)
+1. **Cine e clientul / publicul real?** (Pentru un video: cine îl caută, ce durere
+   are, de ce ar da click ȘI ar rămâne.)
 2. **Care e edge-ul tău? Ce ai deja?** (Skill-uri, distribuție, date, acces,
-   timp. Dacă nu ai niciunul, spune-o — contează.)
+   audiență, timp. Dacă nu ai niciunul, spune-o — contează.)
 3. **Care sunt constrângerile și bugetul? Cât de repede ai nevoie de primul
-   rezultat?** (Pentru hackathon: cât timp până la pitch, ce stack, ce resurse.)
+   rezultat?** (Timp, bani, resurse, deadline.)
 
 Dacă utilizatorul spune "nu știu" la una, oferă 2-3 opțiuni concrete și
 lasă-l să aleagă. Nu trece mai departe cu necunoscute.
@@ -46,7 +46,7 @@ persona:
 
 ```
 IDEEA: <o frază>
-CLIENT / JURIU: <din întrebarea 1>
+CLIENT / PUBLIC: <din întrebarea 1>
 EDGE: <din întrebarea 2>
 CONSTRÂNGERI: <din întrebarea 3 — timp, buget, stack>
 CONTEXT: <orice altceva relevant din conversație>
@@ -94,10 +94,10 @@ concrete**, și **o singură propoziție de verdict**.
 > constatări, 1 propoziție de verdict.
 
 ### Persona 5 — Buyer / Client
-> Ești clientul real descris în brief (sau membru al juriului, dacă e
-> hackathon). Joacă rolul complet: ai problema asta? Ți-ai da banii / votul pe
-> soluția asta? Ce te-ar opri? Ce ai folosi în loc? Fii sincer ca un om real,
-> nu politicos. Întoarce: scor /10 (probabilitatea reală să cumperi/votezi),
+> Ești clientul / spectatorul real descris în brief. Joacă rolul complet: ai
+> problema asta? Ai da click / ți-ai da banii pe soluția asta? Ce te-ar opri?
+> Ce ai folosi sau urmări în loc? Fii sincer ca un om real, nu politicos.
+> Întoarce: scor /10 (probabilitatea reală să cumperi/dai click),
 > ce te-ar convinge, ce te oprește, 1 propoziție de verdict.
 
 **Dacă mediul nu suportă sub-agenți paraleli (Task/Agent):** rulează cele 5
@@ -130,8 +130,8 @@ CEL MAI MARE UPSIDE:
 <varianta glass-half-full, dacă merge>
 
 THE MONEY READ / IMPACT READ:
-<economics realiste: poate fi profitabil / are impact real? CAC vs LTV,
-sau pentru hackathon: e fezabil în timp + impresionează juriul?>
+<economics realiste: poate fi profitabil / aduce lead-uri / are tracțiune?
+CAC vs LTV pentru un produs, sau pentru un video: CTR + retenție + lead probabil?>
 
 CEL MAI IEFTIN TEST DE 48h:
 <UN singur test concret, ieftin, executabil în următoarele 48h care
