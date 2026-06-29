@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estimator preț montaj aer condiționat</title>
+<!--
+  PROTOTIP B1 — Estimator AI de preț (demo Liron).
+  Prețuri de montaj din piața HVAC Moldova (sursă: air-climat.md, iun 2026).
+  Date reale, NU inventate. Pentru demo; clientul real (ex. ecoconfortsistem)
+  își pune propriile cifre în obiectul PRETURI de mai jos.
+-->
+<style>
+  :root{ --violet:#7C3AED; --bg:#0b1020; --card:#141a2e; --line:#26304d; --txt:#e8ecf7; }
+  *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  body{margin:0;background:linear-gradient(160deg,#0b1020,#0a0d1a);color:var(--txt);
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;
+    max-width:480px;width:100%;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  h1{font-size:22px;margin:0 0 4px} .sub{color:#9aa6c7;font-size:14px;margin:0 0 22px}
+  label{display:block;font-size:13px;color:#aeb8d8;margin:16px 0 6px}
+  select,input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);
+    background:#0e1424;color:var(--txt);font-size:15px}
+  .row{display:flex;gap:12px} .row>div{flex:1}
+  .result{margin-top:24px;padding:20px;border-radius:14px;
+    background:linear-gradient(135deg,rgba(124,58,237,.18),rgba(124,58,237,.05));
+    border:1px solid rgba(124,58,237,.4);text-align:center}
+  .result .lbl{font-size:13px;color:#bca9f5} .price{font-size:34px;font-weight:800;margin:6px 0}
+  .price span{font-size:18px;color:#9aa6c7;font-weight:600}
+  .note{font-size:12px;color:#8590b5;margin-top:8px}
+  .cta{display:block;margin-top:18px;padding:14px;border-radius:10px;background:var(--violet);
+    color:#fff;text-align:center;text-decoration:none;font-weight:700}
+  .brk{margin-top:14px;font-size:13px;color:#aeb8d8} .brk div{display:flex;justify-content:space-between;
+    padding:6px 0;border-bottom:1px dashed var(--line)}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Cât costă montajul aerului tău condiționat?</h1>
+  <p class="sub">Află prețul orientativ în 10 secunde, fără să suni.</p>
+
+  <label>Tipul lucrării</label>
+  <select id="serviciu">
+    <option value="montaj">Montaj aer condiționat nou</option>
+    <option value="pre">Pre-instalare (trasee în pereți)</option>
+    <option value="mentenanta">Mentenanță / curățare</option>
+  </select>
+
+  <div class="row">
+    <div>
+      <label>Putere (BTU)</label>
+      <select id="btu">
+        <option value="9000">7.000–9.000 BTU (cameră mică)</option>
+        <option value="12000" selected>12.000 BTU (cameră medie)</option>
+        <option value="18000">18.000 BTU (living)</option>
+        <option value="24000">24.000 BTU (spațiu mare)</option>
+        <option value="28000">28.000 BTU (foarte mare)</option>
+      </select>
+    </div>
+    <div>
+      <label>Etaj exterior</label>
+      <select id="etaj">
+        <option value="0">Parter / acces ușor</option>
+        <option value="2000">Sus, necesită alpinist</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="lbl">Preț orientativ estimat</div>
+    <div class="price" id="pret">— <span>lei</span></div>
+    <div class="brk" id="detaliu"></div>
+    <div class="note">Estimare pe baza tarifelor standard. Prețul final se confirmă la fața locului.</div>
+    <a class="cta" href="#" id="cta">Programează o vizită gratuită →</a>
+  </div>
+</div>
+
+<script>
+// Tarife reale piața Moldova (air-climat.md, iun 2026). Editabile per client.
+const PRETURI = {
+  montaj:     {9000:1500, 12000:1700, 18000:2100, 24000:2300, 28000:2500},
+  pre:        {9000:1200, 12000:1300, 18000:1500, 24000:1700, 28000:1900},
+  mentenanta: {9000:700,  12000:750,  18000:800,  24000:850,  28000:900}
+};
+const $ = id => document.getElementById(id);
+function calc(){
+  const s = $('serviciu').value, btu = +$('btu').value, etaj = +$('etaj').value;
+  const baza = PRETURI[s][btu];
+  const total = baza + (s==='montaj' ? etaj : 0);
+  $('pret').innerHTML = total.toLocaleString('ro-RO') + ' <span>lei</span>';
+  let html = `<div><span>${s==='montaj'?'Montaj':s==='pre'?'Pre-instalare':'Mentenanță'} ${btu.toLocaleString('ro-RO')} BTU</span><span>${baza.toLocaleString('ro-RO')} lei</span></div>`;
+  if(s==='montaj' && etaj) html += `<div><span>Serviciu alpinist</span><span>${etaj.toLocaleString('ro-RO')} lei</span></div>`;
+  $('detaliu').innerHTML = html;
+}
+['serviciu','btu','etaj'].forEach(id=>$(id).addEventListener('change',calc));
+calc();
+</script>
+</body>
+</html>
