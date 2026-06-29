@@ -17,6 +17,7 @@ Pachetele complete de video și istoricul strategiei. Skill-ul care le produce:
 | 07-google-maps.md | #6 | Instalator mai slab apare pe Google | Programat 6 iul |
 | 08-sezon-ac.md | #47 | Sezon AC: pregătește-te acum | Programat 8 iul |
 | 09-recenzii-google.md | nou | Zeci de recenzii fără să ceri manual | Programat 10 iul |
+| 10-site-bun-vs-mort.md | #12 | Site bun vs. mort (formular cu SMS) | Draft |
 
 ## Evoluția strategiei
 `evolutie.md` — cum s-a schimbat abordarea de la selecția nișei până acum.

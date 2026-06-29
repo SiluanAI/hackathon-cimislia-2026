@@ -162,6 +162,27 @@ liron.md · +373 78 996 237
 
 ---
 
+## 10 — Site bun vs. site mort
+**GRUP:** Întrebare pentru patronii de aici: aveți un site care v-a adus vreodată un
+client, sau unul care doar stă acolo? Am pus față în față două firme de instalații — una
+cu un site care i-a adus o lucrare de peste 10.000 lei și mesaje constante, alta cu un
+site mort de doi ani. Diferența e un singur lucru, și nu e designul.
+> Comentariu: Am arătat exact care e diferența aici: [link]
+
+**PAGINĂ:** Două firme de instalații, două site-uri. Unul a adus o lucrare de peste 10.000
+lei și un flux constant de clienți interesați. Celălalt e mort de doi ani și patronul nici
+nu știe. Diferența nu e cum arată — e un formular care îți trimite SMS în secunda în care
+un client are nevoie de tine. Îți arăt concret ce face un site să lucreze pentru tine.
+Vezi aici: [link]
+liron.md · +373 78 996 237
+#HVAC #instalatii #site #afaceriMoldova #LironAgency
+
+**WHATSAPP:** Salut! Am scos un video nou — diferența dintre un site care îți aduce clienți
+și unul care doar stă acolo (cu un exemplu real de lucrare de 10.000 lei). Dacă-ți vine în
+minte un coleg cu firmă de instalații, dă-i-l mai departe: [link]
+
+---
+
 ## Checklist per publicare (în primele 24-48h)
 - [ ] Postat în grupul HVAC Moldova (link în primul comentariu)
 - [ ] Postat în Grupul Instalatorilor din România + Instalații București (link în comentariu)
