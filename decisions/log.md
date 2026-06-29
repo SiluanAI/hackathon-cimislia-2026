@@ -6,6 +6,8 @@ Strategia detaliată e în `decisions/youtube-strategy.md`.
 
 ---
 
+[2026-06-27 21:30] DECISION: session-handoff RESHAPE — handoff durabil în fișiere datate + prag de tokeni | REASONING: Verdict council = RESHAPE mic; copy-paste e volatil pe mediu efemer, deci handoff-ul se scrie ca fișier comis în decisions/handoffs/ denumit YYYY-MM-DD-HHMM-topic (sortabil cronologic); sesiunea nouă citește cel mai recent ACTIV. Regulă fermă: handoff la 225k tokeni, plafon dur 250k niciodată depășit | CONTEXT: Cerut de Sil; rezolvă fix problema containerelor efemere lovită azi (push 403)
+
 [2026-06-27 21:00] DECISION: Adăugat skill-ul `session-handoff` (.claude/skills/session-handoff/) | REASONING: Combate context rot — scrie un rezumat structurat de predare (livrat, fișiere cheie, decizii, stare git, întrebări deschise, unde reiei) înainte de /clear, ca să continui în fereastră curată fără pierdere de context | CONTEXT: Adaptat după "Upgrade 3 / session-handoff" din transcriptul video Claude Code; include verificare de persistență (commit/push) fiindcă mediul web e efemer
 
 [2026-06-27 20:30] DECISION: Council RESHAPE final — modul RAPID devine un singur critic-structurat (nu 2 persona) | REASONING: 5 teste pe decizii Liron reale au validat skill-ul; testul head-to-head (T5) a arătat că un critic unic bine prompt-uit egalează consiliul de 5 persona la ⅓ din cost — cei 5 sub-agenți merită doar la decizii mari unde Buyer + Deep Researcher aduc info externă nouă | CONTEXT: Mecanic totul funcționează (paralel, garda de scope pe T3, research cu surse); valoarea council-ului e funcția de forțare, nu superioritatea analitică

@@ -1,54 +1,63 @@
 ---
 name: session-handoff
 description: >-
-  Scrie un rezumat de predare a sesiunii ÎNAINTE de a face /clear sau de a
-  porni o sesiune nouă, ca să continui exact de unde ai rămas fără să pierzi
-  context. Folosește când conversația s-a umflat (Claude devine lent/uită), când
-  vrei să eviti "context rot", sau când muți munca în altă sesiune/alt model.
-  Produce un bloc gata de copiat: ce s-a făcut, fișiere cheie, decizii, stare
-  git, întrebări deschise și unde reiei.
+  Scrie un rezumat de predare a sesiunii ca să continui exact de unde ai rămas
+  fără să pierzi context. Rulează OBLIGATORIU când contextul trece de 225.000
+  tokeni (plafon dur 250k, niciodată depășit), înainte de /clear, sau când muți
+  munca în altă sesiune. Salvează handoff-ul ca fișier comis în
+  decisions/handoffs/ (durabil, supraviețuiește containerului efemer) și opțional
+  ca bloc de copiat pentru /clear rapid.
 ---
 
 # Session Handoff
 
-Conversațiile lungi degradează calitatea (context rot): Claude devine mai lent,
-uită, halucinează — cu mult înainte ca fereastra de context să fie plină. Soluția
-nu e `/compact` (lent, pierde nuanțe), ci o **predare curată**: rezumi ce contează,
-faci `/clear`, lipești rezumatul → fereastră curată, dar continui exact de unde erai.
+Conversațiile lungi degradează calitatea (context rot): Claude devine lent, uită,
+halucinează — cu mult înainte ca fereastra să fie plină. Soluția: o **predare
+curată** într-un fișier comis, ca o sesiune nouă să continue exact de unde erai.
 
-**Când o rulezi:**
-- Când fereastra de context trece de ~25% (vezi `/context`) sau Claude începe să uite.
-- Înainte de `/clear`.
-- Când muți munca în altă sesiune sau alt model (Codex etc.).
-- La finalul unei sesiuni de lucru, ca punct de reluare pentru data viitoare.
+## Pragul de tokeni (regulă fermă)
+
+- La **225.000 tokeni** (vezi `/context` sau statusline) → rulează ACEST skill imediat.
+- **250.000 tokeni = plafon dur. Niciodată depășit.** Dacă te apropii, oprește orice
+  altceva și fă handoff-ul + `/clear`.
+- Alte momente: înainte de `/clear`, la mutarea muncii în altă sesiune/model, la
+  finalul unei sesiuni de lucru.
 
 ---
 
 ## Pasul 1 — Asigură persistența (mediul e efemer)
 
-Containerul se șterge după inactivitate. Înainte de handoff, verifică rapid:
+Containerul se șterge după inactivitate. Înainte de handoff:
 - Decizii importante logate în `decisions/log.md`? Dacă nu, loghează-le acum.
-- Modificări necomise? Spune-i utilizatorului ce e necomis/nepush-uit. Un handoff
-  fără commit/push nu salvează munca, doar contextul.
+- Modificări necomise/nepush-uite? Spune-i utilizatorului. **Handoff-ul salvează
+  CONTEXTUL, nu FIȘIERELE** — persistența reală = commit + push.
 
 ---
 
-## Pasul 2 — Scrie blocul de handoff
+## Pasul 2 — Scrie handoff-ul ca fișier comis (calea durabilă)
 
-Produ EXACT structura de mai jos, în română cu diacritice, într-un singur bloc
-de cod ușor de copiat. Fii concret și scurt — fără umplutură. Dacă o secțiune e
-goală, scrie "—", n-o inventa.
+Creează fișierul:
+```
+decisions/handoffs/YYYY-MM-DD-HHMM-<topic-slug>.md
+```
+- `topic-slug` = topicul principal al sesiunii, scurt, cu liniuțe (ex:
+  `pret-site-programare`, `skill-council`, `pachet-video-07`).
+- Prefixul dată-oră face fișierele să se sorteze cronologic singure → cel mai
+  recent e mereu ultimul la listare.
+
+Conținutul fișierului (română cu diacritice, concret, fără umplutură; secțiune
+goală = "—"):
 
 ```
 ═══════════════ SESSION HANDOFF ═══════════════
-Data: <YYYY-MM-DD HH:MM>  ·  Branch: <branch>  ·  Repo: Liron YouTube
+Data: <YYYY-MM-DD HH:MM>  ·  Topic: <topicul principal>
+Branch: <branch>  ·  Repo: Liron YouTube  ·  Status: <ACTIV | ÎNCHIS>
 
 DE UNDE AM PORNIT (obiectivul sesiunii):
-<1-2 rânduri — ce am vrut să rezolvăm>
+<1-2 rânduri>
 
 CE S-A LIVRAT:
-- <rezultat concret 1>
-- <rezultat concret 2>
+- <rezultat concret>
 
 DECIZII BLOCATE (nu le redeschide fără motiv):
 - <decizie + de ce>
@@ -60,36 +69,48 @@ STARE GIT:
 - Branch: <branch> · Ultim commit: <hash + mesaj scurt>
 - Necomis: <da/nu — ce> · Push-uit: <da/nu>
 
-VERIFICAT (ce e confirmat că merge vs neconfirmat):
-- <ce am testat și a trecut> / <ce NU e încă verificat>
+VERIFICAT (confirmat că merge vs neconfirmat):
+- <ce a trecut> / <ce NU e încă verificat>
 
 AMÂNAT / ÎNTREBĂRI DESCHISE:
-- <fir deschis 1 — ce decizie aștaptă de la Sil>
+- <fir deschis — ce decizie așteaptă de la Sil>
 
 REIA DE AICI (primul pas concret în sesiunea nouă):
 1. <acțiunea exactă următoare>
 ═══════════════════════════════════════════════
 ```
 
+Pune `Status: ÎNCHIS` când firul e terminat (ca să nu fie reluat din greșeală);
+`ACTIV` dacă rămâne treabă pe el.
+
+Comite fișierul: `git add decisions/handoffs/<fișier> && git commit` (și push dacă
+se poate). Așa supraviețuiește morții containerului.
+
 ---
 
-## Pasul 3 — Instrucțiuni de reluare
+## Pasul 3 — Opțional: bloc de copiat pentru /clear rapid
 
-După bloc, spune-i utilizatorului exact ce să facă:
+Dacă vrei doar să cureți fereastra în ACEEAȘI sesiune (containerul trăiește),
+afișează și conținutul ca bloc, apoi: `/copy` → `/clear` → lipești blocul.
+Pentru "închid laptopul și revin mâine", fișierul comis (Pasul 2) e suficient —
+nu depinde de clipboard.
 
-1. `/copy` (sau copiază manual blocul de mai sus).
-2. `/clear` — golește fereastra de context.
-3. Lipește blocul ca primul mesaj în sesiunea curată.
+---
 
-În sesiunea nouă, Claude citește mai întâi `CLAUDE.md` (Step 0: `git pull` +
-strategia), apoi blocul de handoff îi dă starea exactă — și continuă din "REIA
-DE AICI".
+## Cum continuă sesiunea NOUĂ (citește asta la pornire)
+
+1. `git pull` (vezi `CLAUDE.md` Step 0).
+2. Listează `decisions/handoffs/` — fișierele se sortează cronologic.
+3. **Implicit: citește cel mai RECENT fișier cu `Status: ACTIV`** și continuă din
+   secțiunea "REIA DE AICI".
+4. Dacă există mai multe fire ACTIVE, sau utilizatorul a numit un topic anume,
+   citește fișierul cu acel topic în nume. Dacă e ambiguu, enumeră firele active
+   (dată + topic) și întreabă pe care îl reia.
 
 ---
 
 ## Note
 
-- Handoff-ul rezumă CONTEXTUL, nu salvează FIȘIERELE. Persistența reală =
-  commit + push (vezi Pasul 1).
-- Nu pune secrete/chei în bloc — ajunge în istoricul conversației.
-- Ține-l scurt: scopul e o fereastră curată, nu să recreezi toată conversația.
+- Nu pune secrete/chei în handoff — ajunge în git.
+- Ține-l scurt: scopul e o fereastră curată, nu re-crearea conversației.
+- Handoff-urile vechi rămân ca istoric; marchează-le `ÎNCHIS` când termini firul.
