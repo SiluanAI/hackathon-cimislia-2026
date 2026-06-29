@@ -23,6 +23,8 @@ afară de filmare.
 - `.claude/skills/council/` — stress-testează o idee cu un consiliu adversarial
   (Contrarian, Expansionist, First-Principles, Deep Researcher, Buyer + Judecător)
   înainte de a investi timp în ea.
+- `.claude/skills/session-handoff/` — scrie un rezumat de predare a sesiunii
+  înainte de `/clear`, ca să continui fără să pierzi context (anti context-rot).
 
 ## Structură
 
