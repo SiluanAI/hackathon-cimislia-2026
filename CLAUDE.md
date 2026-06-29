@@ -78,7 +78,8 @@ Loghează: schimbări de strategie, nișă, format, plan de publicare, decizii d
 ├── README.md                       <- overview proiect
 ├── .claude/skills/
 │   ├── youtube-video-liron/        <- skill producție pachet video
-│   └── council/                    <- skill stress-test idei (consiliu adversarial)
+│   ├── council/                    <- skill stress-test idei (consiliu adversarial)
+│   └── session-handoff/            <- skill predare sesiune (anti context-rot)
 ├── youtube/
 │   ├── README.md                   <- index pachete + status
 │   ├── evolutie.md                 <- cum a evoluat strategia
