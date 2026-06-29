@@ -41,8 +41,18 @@ Citești obligatoriu:
    workflow thumbnail, ofertă Liron, plan de publicare, research piață)
 2. `youtube/README.md` — pachetele video și statusul lor
 3. `decisions/log.md` — ce am decis deja
+4. `decisions/handoffs/` — dacă există un handoff cu `Status: ACTIV`, citește-l pe
+   cel mai recent și continuă din "REIA DE AICI" (vezi skill-ul `session-handoff`).
 
 Skill-ul care produce pachetele: `.claude/skills/youtube-video-liron/`.
+
+---
+
+## Regula de context (fermă)
+
+- La **225.000 tokeni** (vezi `/context` sau statusline) → rulează `/session-handoff`.
+- **250.000 tokeni = plafon dur, niciodată depășit.** Apropiindu-te, oprește tot,
+  fă handoff + `/clear`. Mai mult context ≠ mai bine: degradează output-ul.
 
 ---
 
@@ -80,6 +90,7 @@ Loghează: schimbări de strategie, nișă, format, plan de publicare, decizii d
 │   ├── youtube-video-liron/        <- skill producție pachet video
 │   ├── council/                    <- skill stress-test idei (consiliu adversarial)
 │   └── session-handoff/            <- skill predare sesiune (anti context-rot)
+├── decisions/handoffs/             <- predări de sesiune (fișiere datate, reluare)
 ├── youtube/
 │   ├── README.md                   <- index pachete + status
 │   ├── evolutie.md                 <- cum a evoluat strategia
