@@ -8,7 +8,8 @@ description: >
   YouTube", "am nevoie de descriere/thumbnail/playlist pentru un video", sau cere
   brainstorming de idei de conținut. Acoperă: idei, interviu pentru date reale,
   scenariu cuvânt-cu-cuvânt, prompt de thumbnail, titlu, descriere, capitole,
-  secțiunea Problems (Education), playlist și post de lansare pe social.
+  secțiunea Problems (Education), playlist și postările de lansare (grup HVAC Moldova
+  + pagina Liron + WhatsApp).
 ---
 
 # YouTube Video — Liron Agency
@@ -116,9 +117,26 @@ timecode-urile dacă montajul a schimbat secundele.
 ### Pasul 8 — Playlist (dacă e nevoie)
 Propune title + description + limba (Romanian) pentru playlist-ul potrivit.
 
-### Pasul 9 — Post de lansare (opțional)
-La cerere, scrie un text scurt pentru Facebook/Instagram/WhatsApp care trimite primul
-val de trafic spre video.
+### Pasul 9 — Postări de lansare (parte din pachet, nu opțional)
+Fiecare pachet include postările de distribuție pentru primul val de trafic calificat.
+Convențiile și exemplele pe cele 9 videouri existente sunt în
+`youtube/distributie-playbook.md` — respectă-le. Produci DOUĂ postări distincte ca ton:
+
+1. **GRUP — „HVAC Moldova — Patroni & Tehnicieni"** (+ grupurile RO: Grupul
+   Instalatorilor din România, Instalații sanitare/termice București).
+   - Ton de COLEG de breaslă, nu de reclamă. Pui întrebarea-durere din video + valoare.
+   - **Linkul NU în post, ci în primul comentariu** (filtrele de grup penalizează postările
+     cu link; membrii resping reclama directă). Scrie explicit linia de comentariu.
+   - Fără CTA de vânzare, fără hashtags.
+
+2. **PAGINĂ — Liron Agency** (facebook.com/profile.php?id=61589841360927).
+   - Ton de BRAND: Liron e expertul. Valoare + CTA deschis. Linkul direct în post e ok.
+   - Închide cu: `liron.md · +373 78 996 237` + 3-5 hashtags relevante (#HVAC + subiect).
+
+3. **WHATSAPP** — o linie scurtă de trimis celor 4 clienți + cunoscuților cu firmă HVAC.
+
+Reguli pentru ambele: diacritice mereu, fără emoji, valoare întâi/link al doilea, max
+1 link/zi/grup. Adaugă noul video în `youtube/distributie-playbook.md` cu cele 3 postări.
 
 ## Livrabil final
 
